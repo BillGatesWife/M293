@@ -96,6 +96,10 @@ nav a:hover {
   transform: translateY(calc(-1 * var(--nav-height)));
 }
 
+#nav-placeholder {
+  height: 10vh; /* Gleiche Höhe wie die Navigationsleiste */
+}
+
 /* Main content styles */
 div.portrait {
   width: 100%;
@@ -113,40 +117,45 @@ p.lorem {
   padding: 1.5625%; /* Changed to percentage */
 }
 
+.contact-info {
+  text-align: left;
+  margin: 2vw;
+  font-size: 1.2vw;
+}
+
 .form {
-  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 50%;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5625%; /* Changed to percentage */
+.form p,
+.form h2 {
+  margin-bottom: 10px;
 }
 
-form input[type="password"] {
+.form input,
+.form textarea {
   width: 100%;
-  max-width: 21.875%; /* Changed to percentage */
-  padding: 1.5625%; /* Changed to percentage */
-  margin-bottom: 1.5625%; /* Changed to percentage */
-  border: 0.104167em solid #0078d7; /* Changed to percentage */
-  border-radius: 0.41667em; /* Changed to percentage */
-  font-size: 100%; /* Changed to percentage */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-form button[type="submit"] {
-  padding: 1.5625% 3.125%; /* Changed to percentage */
+.form button[type="submit"] {
+  padding: 10px 20px;
   border: none;
-  border-radius: 0.41667em; /* Changed to percentage */
-  font-size: 112.5%; /* Changed to percentage */
+  border-radius: 4px;
   font-weight: bold;
   background-color: #0078d7;
   color: white;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
 }
 
-form button[type="submit"]:hover {
+
+.form button[type="submit"]:hover {
   background-color: #004480;
 }
 

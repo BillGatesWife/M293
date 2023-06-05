@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Lukas Gusset</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <table>
-          <tbody>
-            <tr class="menu">
-              <td><a href="index.html">Home</a></td>
-              <td><a href="ueber_mich.html">Über mich</a></td>
-              <td><a href="portfolio.html">Portfolio</a></td>
-              <td><a href="kompetenzen.html">Kompetenzen</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>this isch the contact site
-    <br>
-    <br>
-    <br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Lukas Gusset</title>
+</head> 
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ueber_mich.html">Über mich</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="kompetenzen.html">Kompetenzen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="grid-container">
+    <div class="contact-info">
+      <h1>Kontakt</h1>
+      <p>E-Mail: xy@mail.com</p>
+      <p>Telefon: 07000000</p>
     </div>
-    <footer>
-      <nav>
-        <table>
-          <tbody>
-            <tr>
-              <td><a href="contact.html">Kontakt</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </nav>
-    </footer>
-  </body>
+    <div class="contentall">
+      <div class="form">
+        <h2>Kontaktformular</h2>
+        <form action="https://formsubmit.co/3e5bd9d43793077269048fd3136f61b0" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" required>
+    
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="E-Mail" required>
+    
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="Nachricht" required></textarea>
+    
+          <input type="hidden" name="_next" value="https://www.tiktok.com/">
+          <input type="hidden" name="_captcha" value="true">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>    
+
+  <footer>
+    <nav id="navbarfooter">
+      <ul>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
 </html>
