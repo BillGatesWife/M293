@@ -1,0 +1,219 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%; /* Changed to percentage */
+  line-height: 1.5;
+  background-color: #eaf1f1;
+  --nav-height: 10vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5%; /* Changed to percentage */
+}
+
+.portrait {
+  position: relative;
+  grid-column: 1 / -1;
+  z-index: 1;
+}
+
+.portrait::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28%; /* Changed to percentage */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #eaf1f1);
+}
+
+.contentall {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5%; /* Changed to percentage */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  font-size: 2vw; /* Updated to fluid font size */
+}
+
+nav a {
+  display: block;
+  padding: 0.625%;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #0078d7;
+  color: white;
+  height: 100%; /* Added to take up 100% height on hover */
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: var(--nav-height);
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  z-index: 2;
+  transition: transform 0.3s;
+}
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+}
+
+/* Main content styles */
+div.portrait {
+  width: 100%;
+}
+
+div.portrait img {
+  width: 100%;
+}
+
+div {
+  text-align: center;
+}
+
+p.lorem {
+  padding: 1.5625%; /* Changed to percentage */
+}
+
+.form {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5625%; /* Changed to percentage */
+}
+
+form input[type="password"] {
+  width: 100%;
+  max-width: 21.875%; /* Changed to percentage */
+  padding: 1.5625%; /* Changed to percentage */
+  margin-bottom: 1.5625%; /* Changed to percentage */
+  border: 0.104167em solid #0078d7; /* Changed to percentage */
+  border-radius: 0.41667em; /* Changed to percentage */
+  font-size: 100%; /* Changed to percentage */
+}
+
+form button[type="submit"] {
+  padding: 1.5625% 3.125%; /* Changed to percentage */
+  border: none;
+  border-radius: 0.41667em; /* Changed to percentage */
+  font-size: 112.5%; /* Changed to percentage */
+  font-weight: bold;
+  background-color: #0078d7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: #004480;
+}
+
+.googlelink {
+  text-align: center;
+  margin-bottom: 1.5625%; /* Changed to percentage */
+}
+
+.flexcontainer {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Businessman,
+.Lorem {
+  flex: 1;
+  text-align: center;
+  padding: 1.5625%; /* Changed to percentage */
+}
+
+.Lorem {
+  background-color: #f65a1d;
+  color: white;
+}
+
+.Businessman {
+  background-color: yellow;
+}
+
+/* Footer styles */
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #3b516b;
+  color: #f65a1d;
+  height: 10%;
+  z-index: 2;
+}
+
+#navbarfooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+footer li {
+  flex: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  background-color: #f65a1d;
+}
