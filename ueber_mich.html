@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <title>Lukas Gusset</title>
-</head>
+</head> 
 <body>
   <header>
-    <nav>
-      <ul class="menu">
+    <nav class="navbar">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="ueber_mich.html">Über mich</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -19,61 +20,25 @@
     </nav>
   </header>
 
-    <div class="contentall">
-      <div class="form">
-        <p>Hello My Name Is Lukas</p>
-        <h2>I'm A Professional Password-Reviewer</h2>
-        <p>Please Enter Your Password :)))</p>
-        <form action="https://formsubmit.co/3e5bd9d43793077269048fd3136f61b0" method="POST">
-          <input type="password" name="Password" placeholder="Password" required>
-          <input type="hidden" name="_next" value="https://www.tiktok.com/">
-          <input type="hidden" name="_captcha" value="true">
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-  
-      <div class="googlelink">
-        <p>Here's A Website I Made</p>
-        <a href="https://www.google.com"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo"></a>
-      </div>
-      <p class="lorem">
-        Lorem Ipsum numerus dedit. Conateur esse vos dolore, quos metrum anglicus. Ego hodie tantum manducavi, ut ventriculus meus exploderet. Fortasse parvus sum, sed multum etiam possum. Si Augustus hodie vivat, mundus melior esset.
-      </p>
+  <div id="nav-placeholder"></div>
+
+  <div class="grid-container">
+    <div class="portrait">
+      <img src="portrait.jpg" alt="Portrait">
     </div>
-  
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <div class="text-right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sagittis metus vel viverra. Ut dignissim, metus vitae eleifend iaculis, metus dui placerat neque, sed finibus velit odio in ex. Aliquam malesuada mauris at quam faucibus vestibulum. Vivamus a arcu et nibh finibus consequat. Vestibulum mattis malesuada est nec congue.</p>
+    </div>
+    <div class="text-below-portrait">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices dui ac mi malesuada, eu luctus justo ullamcorper. Nulla eleifend turpis at fermentum bibendum. Sed ut metus non dui accumsan tempus. Praesent venenatis nunc in est aliquam, at volutpat felis pellentesque.</p>
+    </div>
+    <div class="image-left">
+      <img src="placeholder.jpg" alt="Placeholder Image">
+    </div>
+  </div>
 
   <footer>
-    <nav>
+    <nav id="navbarfooter">
       <ul>
         <li><a href="contact.html">Kontakt</a></li>
       </ul>
