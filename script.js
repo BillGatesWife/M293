@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         nav.classList.remove("nav--hidden");
       }
-  
+      
       lastScrollY = window.scrollY;
     });
   });
-  
