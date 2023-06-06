@@ -61,7 +61,7 @@ nav ul {
 nav li {
   flex: 1;
   text-align: center;
-  font-size: 2vw; /* Updated to fluid font size */
+  font-size: 2vw;
 }
 
 nav a {
@@ -74,7 +74,7 @@ nav a {
 nav a:hover {
   background-color: #0078d7;
   color: white;
-  height: 100%; /* Added to take up 100% height on hover */
+  height: 100%;
 }
 
 .navbar {
@@ -370,4 +370,19 @@ footer a:hover {
       grid-tempLate-columns:2fr;
       padding: 2rem 50px;
  }
+}
+
+#portfolio_link {
+  text-align: center;
+  margin: 5vw;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 80%;
 }
